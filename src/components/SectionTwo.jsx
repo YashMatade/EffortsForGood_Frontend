@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import prj from "../Assets/Project.png";
 import fif from "../Assets/50@50.png";
 import p from "../Assets/padhegass.png";
-
+import badhega from "../Assets/Badhega.png";
 const SectionTwo = () => {
     const [screen, setScren] = useState();
 
@@ -75,6 +75,9 @@ const SectionTwo = () => {
                         <div>
                             <img src={p} style={{ height: "200px" }} alt="" />
                         </div>
+                        <div className='ms-4'>
+                            <img src={badhega} style={{ height: "50px" }} alt="" />
+                        </div>
                     </div>
                     <div className="col-lg-1"></div>
                     <div className="col-lg-5">
@@ -91,16 +94,38 @@ const SectionTwo = () => {
                         </ul>
                         <div className="tab-content" id="myTabContent" style={tabContentStyle}>
                             <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                <div className='p-5'>
+                                <div className='p-2'>
                                     <div style={pStyle}>
-                                        50@50 stands as a transformation initiative, poised to elevate one million classrooms across India by integrating cutting-edge technology. This recurrent campaign operates under the "Tech-Led Education" framework, a vital component of AI For Social Good and facilitated by Efforts For Good. Aligned with the National Education Policy, this initiative advocates the adoption of tech-led and AI integrations to address comprehension challenges. By redefining smart schooling beyond infrastructure(hardware and content), it prioritizes proven tech-led interventions, emphasizing measurable learning outcomes and surpassing global best practices. Partnering with Build A Class foundation, known for their decade-long expertise in technological interventions, 50@50 implements advanced Atomo-powered solutions to transform classrooms and elevate learning experiences. 50@50 envisions a future where personalized learning, AI-driven analytics, and holistic education drive India's position as a global leader in inclusive education. Discover details about 50@50 here.
+                                        50@50 stands as a transformation initiative, poised to elevate one million classrooms across India by integrating cutting-edge technology. This recurrent campaign operates under the "Tech-Led Education" framework, a vital component of AI For Social Good and facilitated by Efforts For Good.
+                                        <br />
+                                        <br />
+                                        Aligned with the National Education Policy, this initiative advocates the adoption of tech-led and AI integrations to address comprehension challenges.
+                                        <br />
+                                        <br />
+                                        By redefining smart schooling beyond infrastructure(hardware and content), it prioritizes proven tech-led interventions, emphasizing measurable learning outcomes and surpassing global best practices. Partnering with Build A Class foundation, known for their decade-long expertise in technological interventions, 50@50 implements advanced Atomo-powered solutions to transform classrooms and elevate learning experiences.
+                                        <br />
+                                        <br />
+                                        50@50 envisions a future where personalized learning, AI-driven analytics, and holistic education drive India's position as a global leader in inclusive education.
+                                        <br />
+                                        <br />
+                                        Discover details about 50@50 here.
                                     </div>
                                 </div>
                             </div>
                             <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                <div className='p-5'>
+                                <div className='p-2'>
                                     <div style={pStyle}>
-                                        AI For Social Good represents an open collaborative initiative led by prominent tech companies in India, aiming to harness the unparalleled capabilities of AI for enhanced decision-making, accelerated problem-solving, and societal advancement. AI For Social Good thrives at the crossroads of precise insights, social investments, bleeding-edge innovations, and impactful interventions. This tech-driven framework is poised to optimize SDG indicators, revolutionize decision-making via intricate data analysis and visualization, elevating interventions while meticulously gauging sustainable progress towards pivotal Sustainable Development Goals (SDGs). We're making sure the people who are driven to change the world have open access to the latest tools and technologies. Together with our collaborators, AI For Social Good is constructing a comprehensive tech and insights repository, empowering implementing agencies and NGOs to seamlessly integrate AI tools. With a primary focus on Education, Climate, Health, and Financial Inclusion, AI For Social Good continues to advocate for social projects rooted in robust tech and AI foundations. Discover more about joining our collective and the ongoing endeavors at AI For Social Good here.
+                                        AI For Social Good represents an open collaborative initiative led by prominent tech companies in India, aiming to harness the unparalleled capabilities of AI for enhanced decision-making, accelerated problem-solving, and societal advancement.
+                                        <br />
+                                        <br />
+                                        AI For Social Good thrives at the crossroads of precise insights, social investments, bleeding-edge innovations, and impactful interventions. This tech-driven framework is poised to optimize SDG indicators, revolutionize decision-making via intricate data analysis and visualization, elevating interventions while meticulously gauging sustainable progress towards pivotal Sustainable Development Goals (SDGs).
+                                        <br />
+                                        <br />
+                                        We're making sure the people who are driven to change the world have open access to the latest tools and technologies. Together with our collaborators, AI For Social Good is constructing a comprehensive tech and insights repository, empowering implementing agencies and NGOs to seamlessly integrate AI tools.
+                                        <br />
+                                        <br />
+                                        With a primary focus on Education, Climate, Health, and Financial Inclusion, AI For Social Good continues to advocate for social projects rooted in robust tech and AI foundations.
+                                        Discover more about joining our collective and the ongoing endeavors at AI For Social Good here.
                                     </div>
                                 </div>
                             </div>

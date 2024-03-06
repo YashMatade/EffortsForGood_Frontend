@@ -15,7 +15,7 @@ const Header = () => {
         <div>
             <nav class="navbar navbar-light" style={{ backgroundColor: "#F5FAFF" }}>
                 <div class="container">
-                    <a class="navbar-brand" ><img src={logo} alt="" style={{ borderRight: "2px solid lightblue" }} /><img src={fif} alt="" className='ms-3' /></a>
+                    <a class="navbar-brand" target='_blank' href="https://www.myefg.org/home"><img src={logo} alt="" style={{ borderRight: "2px solid lightblue" }} /><img src={fif} alt="" className='ms-3' /></a>
                     <form class="d-flex">
                         <button class="btn ps-3 pe-3 pt-2 pb-2 text-white" style={{ backgroundColor: "#EF601D", borderRadius: "15px", fontWeight: "400", fontSize: "16px" }} type="submit" onClick={handleOnfocus}>Pledge Now</button>
                     </form>

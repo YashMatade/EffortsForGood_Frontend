@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-// import Slider from 'react-slick';
-// import 'slick-carousel/slick/slick.css';
-// import 'slick-carousel/slick/slick-theme.css';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import IIM from "../Assets/800px-IIMA_LOGO_BLACK.png";
 import amins from "../Assets/amins logo.png";
 import bsb from "../Assets/BSB_logo_burgundy.png";
@@ -42,7 +42,7 @@ const SliderPortion = () => {
 
     return (
         <div className='mt-5 mb-5'>
-            {/* <Slider {...settings}>
+            <Slider {...settings}>
                 <div className='my-auto'>
                     <img style={{ height: "70px" }} src={IIM} alt="" />
                 </div>
@@ -70,86 +70,7 @@ const SliderPortion = () => {
                 <div className='my-auto'>
                     <img style={{ height: "70px" }} src={world} alt="" />
                 </div>
-            </Slider> */}
-            {
-                window.innerWidth < 546 ? <>
-                    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="d-flex justify-content-around">
-                                    <img src={IIM} style={{ height: "50px" }} class="d-block" alt="Image 1" />
-                                    <img src={amins} style={{ height: "50px" }} class="d-block" alt="Image 1" />
-                                    <img src={jsw} style={{ height: "50px" }} class="d-block" alt="Image 1" />
-
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="d-flex justify-content-around">
-                                    <img src={sarva} style={{ height: "50px" }} class="d-block " alt="Image 2" />
-                                    <img src={surface} style={{ height: "50px" }} class="d-block " alt="Image 3" />
-                                    <img src={tata} style={{ height: "50px" }} class="d-block" alt="Image 1" />
-
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="d-flex justify-content-around">
-                                    <img src={tcp} style={{ height: "50px" }} class="d-block" alt="Image 1" />
-                                    <img src={world} style={{ height: "50px" }} class="d-block" alt="Image 1" />
-                                    <img src={IIM} style={{ height: "50px" }} class="d-block " alt="Image 2" />
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </> : <>
-                    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="d-flex justify-content-around">
-                                    <img src={IIM} style={{ height: "100px" }} class="d-block" alt="Image 1" />
-                                    <img src={amins} style={{ height: "100px" }} class="d-block" alt="Image 1" />
-                                    <img src={jsw} style={{ height: "100px" }} class="d-block" alt="Image 1" />
-                                    <img src={sarva} style={{ height: "100px" }} class="d-block " alt="Image 2" />
-                                    <img src={surface} style={{ height: "100px" }} class="d-block " alt="Image 3" />
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="d-flex justify-content-around">
-                                    <img src={tata} style={{ height: "100px" }} class="d-block" alt="Image 1" />
-                                    <img src={tcp} style={{ height: "100px" }} class="d-block" alt="Image 1" />
-                                    <img src={world} style={{ height: "100px" }} class="d-block" alt="Image 1" />
-                                    <img src={IIM} style={{ height: "100px" }} class="d-block " alt="Image 2" />
-                                    <img src={amins} style={{ height: "100px" }} class="d-block " alt="Image 3" />
-                                </div>
-                            </div>
-                            {/* <div class="carousel-item">
-                        <div class="d-flex justify-content-around">
-                            <img src={IIM} style={{ height: "100px" }} class="d-block" alt="Image 1" />
-                            <img src={amins} style={{ height: "100px" }} class="d-block" alt="Image 1" />
-                            <img src={bsb} style={{ height: "100px" }} class="d-block" alt="Image 1" />
-                            <img src={amins} style={{ height: "100px" }} class="d-block " alt="Image 2" />
-                            <img src={bsb} style={{ height: "100px" }} class="d-block " alt="Image 3" />
-                        </div>
-                    </div> */}
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </>
-            }
+            </Slider>
         </div>
     )
 }

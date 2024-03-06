@@ -12,6 +12,10 @@ const SectionThree = () => {
     const [Message, setMessage] = useState();
     const [err, setErr] = useState();
 
+    // Email and Phone number regex patterns
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phoneRegex = /^[0-9]{10}$/;
+
     const handleSubmit = (e) => {
         e.preventDefault();
         let validate = true;
@@ -21,6 +25,18 @@ const SectionThree = () => {
             officeEmail,
             phoneNummber: phoneNumber,
             message: Message
+        }
+
+        // Email validation
+        if (!emailRegex.test(data.officeEmail)) {
+            setErr("Invalid Email Format");
+            validate = false;
+        }
+
+        // Phone number validation
+        if (!phoneRegex.test(data.phoneNummber)) {
+            setErr("Invalid Phone Number Format");
+            validate = false;
         }
 
         if (data.companyName === "" || data.companyName === undefined) {
@@ -59,8 +75,6 @@ const SectionThree = () => {
                 }
             })
         }
-
-
     }
 
     return (
@@ -104,7 +118,7 @@ const SectionThree = () => {
                                     <label htmlFor="phoneNumber">
                                         Phone Number
                                     </label>
-                                    <input type="phone" required value={phoneNumber} onChange={(e) => { setPhoneNumber(e.target.value); setErr("") }} className="form-control" name="phoneNumber" id="phoneNumber" style={{ backgroundColor: "#F8F5F5" }} />
+                                    <input type="number" required value={phoneNumber} onChange={(e) => { setPhoneNumber(e.target.value); setErr("") }} className="form-control" name="phoneNumber" id="phoneNumber" style={{ backgroundColor: "#F8F5F5" }} />
                                 </div>
 
                                 <div className="col-lg-12 mt-4">
